@@ -27,7 +27,15 @@ $(document).ready(function() {
 		text: 'Source: Randomly Generated Fake Data'
 	};
 	var xAxis = {
-		categories: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun']
+		categories: [
+			'6 Days Ago', 
+			'5 Days Ago', 
+			'4 Days Ago', 
+			'3 Days Ago', 
+			'2 Days Ago', 
+			'Yesterday', 
+			'Today'
+		]
 	};
 	var yAxis = {
 		title: {
@@ -63,10 +71,12 @@ $(document).ready(function() {
 	json.yAxis = yAxis;  
 	json.plotOptions = plotOptions;
 
-	$.getJSON('weather.php', (result) => {
-		json.series = result;
-		$('#container').highcharts(json); 
-	});
+	setInterval(function() {
+		$.getJSON('weather.php', (result) => {
+			json.series = result;
+			$('#container').highcharts(json); 
+		});
+	}, 5000);
 });
 </script>
 </body>
