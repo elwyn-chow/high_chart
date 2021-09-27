@@ -76,7 +76,7 @@ $(document).ready(function() {
 			json.series = result;
 			$('#container').highcharts(json); 
 		});
-	}, 5000);
+	}, 10000);
 });
 </script>
 </body>
