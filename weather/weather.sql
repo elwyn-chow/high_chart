@@ -23,13 +23,11 @@ DROP TABLE IF EXISTS `weather_reports`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `weather_reports` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
   `city` varchar(20) NOT NULL,
   `min` double NOT NULL,
   `max` double NOT NULL,
-  `report_date` date NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+  `report_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,32 +37,32 @@ CREATE TABLE `weather_reports` (
 LOCK TABLES `weather_reports` WRITE;
 /*!40000 ALTER TABLE `weather_reports` DISABLE KEYS */;
 INSERT INTO `weather_reports` VALUES 
-(1,'Sydney',14,21,'2021-09-01'),
-(2,'Melbourne',11,19,'2021-09-01'),
-(3,'Sydney',17,24,'2021-09-02'),
-(4,'Melbourne',12,16,'2021-09-02'),
-(5,'Sydney',11,15,'2021-09-03'),
-(6,'Melbourne',17,22,'2021-09-03'),
-(7,'Sydney',11,18,'2021-09-04'),
-(8,'Melbourne',12,25,'2021-09-04'),
-(9,'Sydney',12,19,'2021-09-09'),
-(10,'Melbourne',11,24,'2021-09-09'),
-(11,'Sydney',16,17,'2021-09-08'),
-(12,'Melbourne',11,17,'2021-09-08'),
-(13,'Sydney',15,26,'2021-09-07'),
-(14,'Melbourne',13,22,'2021-09-07'),
-(15,'Sydney',11,15,'2021-09-06'),
-(16,'Melbourne',16,20,'2021-09-06'),
-(17,'Sydney',18,25,'2021-09-05'),
-(18,'Melbourne',15,21,'2021-09-05'),
-(19,'Brisbane',17,21,'2021-09-05'),
-(20,'Brisbane',19,23,'2021-09-06'),
-(21,'Brisbane',20,26,'2021-09-07'),
-(22,'Brisbane',22,29,'2021-09-08'),
-(23,'Brisbane',14,16,'2021-09-09'),
-(24,'Brisbane',16,19,'2021-09-04'),
-(25,'Brisbane',19,23,'2021-09-03'),
-(26,'Brisbane',19,26,'2021-09-02'),
-(27,'Brisbane',22,23,'2021-09-01');
+('Sydney',14,21,'2021-09-01'),
+('Melbourne',11,19,'2021-09-01'),
+('Sydney',17,24,'2021-09-02'),
+('Melbourne',12,16,'2021-09-02'),
+('Sydney',11,15,'2021-09-03'),
+('Melbourne',17,22,'2021-09-03'),
+('Sydney',11,18,'2021-09-04'),
+('Melbourne',12,25,'2021-09-04'),
+('Sydney',12,19,'2021-09-09'),
+('Melbourne',11,24,'2021-09-09'),
+('Sydney',16,17,'2021-09-08'),
+('Melbourne',11,17,'2021-09-08'),
+('Sydney',15,26,'2021-09-07'),
+('Melbourne',13,22,'2021-09-07'),
+('Sydney',11,15,'2021-09-06'),
+('Melbourne',16,20,'2021-09-06'),
+('Sydney',18,25,'2021-09-05'),
+('Melbourne',15,21,'2021-09-05'),
+('Brisbane',17,21,'2021-09-05'),
+('Brisbane',19,23,'2021-09-06'),
+('Brisbane',20,26,'2021-09-07'),
+('Brisbane',22,29,'2021-09-08'),
+('Brisbane',14,16,'2021-09-09'),
+('Brisbane',16,19,'2021-09-04'),
+('Brisbane',19,23,'2021-09-03'),
+('Brisbane',19,26,'2021-09-02'),
+('Brisbane',22,23,'2021-09-01');
 /*!40000 ALTER TABLE `weather_reports` ENABLE KEYS */;
 UNLOCK TABLES;
