@@ -53,7 +53,7 @@ $(document).ready(function() {
 	json.yAxis = yAxis;  
 	json.plotOptions = plotOptions;
 
-	$.getJSON('http://localhost/high_chart/weather.php', (result) => {
+	$.getJSON('weather.php', (result) => {
 		json.series = result;
 		$('#container').highcharts(json); 
 	});
