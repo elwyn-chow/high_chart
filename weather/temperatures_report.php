@@ -1,4 +1,14 @@
-<html>
+<?php
+/*
+ * This PHP script doesn't actually use any PHP yet. It's all static HTML for 
+ * now.
+ *
+ * This page generates the highchart line graph of temperatures of various
+ * cities.
+ * All the data is fake. I'm just practising using AJAX and highchart.
+ */
+?>
+<html
 <head>
 	<title>Elwyn's Highcharts Example</title>
 	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

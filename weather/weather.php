@@ -1,4 +1,25 @@
 <?php 
+/*
+ * This PHP script generates JSON data from the weather_reports table of the
+ * highchart database.
+ *
+ * By default, it fetches the 7 most recent temperatures for each city in
+ * the database.
+ * Using the city parameter, only a single specified city's data is generated.
+ *
+ * The format of the JSON data is:
+ * [
+ * 	{
+ * 		name: 'CityName1 (max)',
+ *		data: [ temp1, temp2, temp3, temp4, temp5, temp6, temp7 ]
+ * 	},
+ * 	{
+ * 		name: 'CityName1 (min)',
+ *		data: [ temp1, temp2, temp3, temp4, temp5, temp6, temp7 ]
+ * 	},
+ * 	...
+ * ]
+ */
 
 //-----------------------------------------------------------------------------
 /**
